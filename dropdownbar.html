@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Simplest jQuery Dropdown Nav Demo</title>
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
+    <link href="style1.css" rel="stylesheet"> 
+  
+</head>
+
+<body>
+<nav>
+    <div class="container">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li> <a href="#">Categories<i class='fa fa-angle-down'></i></a>
+                <ul>
+                    <li><a href="#">Category One</a></li>
+                    <li><a href="#">Category Two</a></li>
+                    <li><a href="#">Category Three</a></li>
+                </ul>
+            </li>
+            <li class='sub-menu'> <a href="#">Services<i class='fa fa-angle-down'></i></a>
+                <ul>
+                    <li><a href="#">Service One</a></li>
+                    <li><a href="#">Service Two</a></li>
+                    <li><a href="#">Service Three</a></li>
+                    <li><a href="#">Service Four</a></li>
+                    <li><a href="#">Service Five</a></li>
+                    <li><a href="#">Service Six</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </div>
+</nav>
+
+<script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script>
+    $('nav li').hover(
+        function() {
+            $('ul', this).stop().slideDown(200);
+        },
+        function() {
+            $('ul', this).stop().slideUp(200);
+        }
+    );
+</script>
+
+
+</body>
+</html>
