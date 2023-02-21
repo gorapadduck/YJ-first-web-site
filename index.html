@@ -28,9 +28,9 @@
             <p class="welcome-header__text">만약 멍멍톡의 계정을 가지고 계시다면, 이메일 혹은 휴대폰 번호를 입력하세요.</p>
     </header>
 
-    <form id="login-form">
-        <input type="text" placeholder="이메일 혹은 휴대폰 번호"/>
-        <input type="password" placeholder="비밀번호"/>
+    <form action="friends.html" method="get" id="login-form">
+        <input name="username" required type="text" placeholder="이메일 혹은 휴대폰 번호"/>
+        <input name="password" required type="password" placeholder="비밀번호"/>
         <input type="submit" value="시작" />    
         <a href="#">멍멍톡 비밀번호 찾기</a>
     </form>
