@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300;400&family=Nanum+Pen+Script&display=swap');
+@import "reset.css";
+@import "components/status-bar.css";
+@import "components/nav-bar.css";
+@import "components/user-component.css";
+@import "components/badge.css";
+@import "components/screen-header.css";
+@import "components/icon-row.css";
+@import "components/alt-screen-header.css";
+@import "components/no-mobile.css";
+/* components */
+
+@import "variables.css";
+/* screens */
+@import "screens/login.css";
+@import "screens/friends.css";
+@import "screens/find.css";
+@import "screens/more.css";
+@import "screens/settings.css";
+@import "screens/chat.css";
+
+
+body *{
+    font-family: 'Dongle', sans-serif;
+    font-family: 'Nanum Pen Script', cursive;
+}
+
+.main-screen {
+ padding:0px var(--horizontal-space);
+}
